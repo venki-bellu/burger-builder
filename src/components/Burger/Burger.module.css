@@ -3,7 +3,7 @@
     width: 100%;
     margin: auto;
     height: 250px;
-    /* overflow: scroll; */
+    overflow: auto;
     text-align: center;
     font-weight: bold;
     font-size: 1.2rem; 
@@ -23,7 +23,7 @@
     .Burger
     {
         width: 450px;
-        height: 400px;
+        height: 300px;
     }
 }
 
@@ -32,6 +32,6 @@
     .Burger
     {
         width: 700px;
-        height: 600px;
+        height: 500px;
     }
 }
