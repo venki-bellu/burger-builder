@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-import Auxi from '../../hoc/Auxi'
+
+import Auxi from '../../hoc/Auxi';
+import Burger from '../../components/Burger/Burger';
 
 class BurgerBuilder extends Component
 {
@@ -7,7 +9,7 @@ class BurgerBuilder extends Component
     {
         return (
             <Auxi>
-                <div>Burger</div>
+                <Burger/>
                 <div>Burger Control</div>
             </Auxi>
         );
