@@ -1,6 +1,6 @@
 /* eslint-disable react/no-typos */
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 import classes from './BurgerIngredient.module.css'
 
@@ -43,8 +43,8 @@ class BurgerIngredient extends Component{
     
 };
 
-BurgerIngredient.PropTypes = {
-    type: PropTypes.string.isRequired
+BurgerIngredient.propTypes = {
+    type: propTypes.string.isRequired
 };
 
 export default BurgerIngredient;
