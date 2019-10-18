@@ -2,6 +2,7 @@ import React from 'react';
 
 import classes from "./BuildControls.module.css";
 import BuildControl from './BuildControl/BuildControl';
+import { tsPropertySignature } from '@babel/types';
 
 const controls = [
     { label:'Salad', type:'salad'},
@@ -17,7 +18,9 @@ const buildControls = props => (
                 key = {ctrl.label} 
                 label = {ctrl.label}
                 type = {ctrl.type}
-                added = {() => props.ingredientAdded(ctrl.type)}/>
+                added = {() => props.ingredientAdded(ctrl.type)}
+                removed = {() => props.ingredientRemoved(ctrl.type)}
+                disabled = {props.disabled[ctrl.type]}/>
         ))}
     </div>
 );
