@@ -2,7 +2,6 @@ import React from 'react';
 
 import classes from "./BuildControls.module.css";
 import BuildControl from './BuildControl/BuildControl';
-import { tsPropertySignature } from '@babel/types';
 
 const controls = [
     { label:'Salad', type:'salad'},
